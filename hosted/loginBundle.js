@@ -32,7 +32,8 @@ var handleSignup = function handleSignup(e) {
     return false;
   }
 
-  sendAjax('POST', $("#signupForm").attr("action"), $("signupForm").serialize(), redirect);
+  console.log("serialized:" + $("signupForm").serialize());
+  sendAjax('POST', $("#signupForm").attr("action"), $("#signupForm").serialize(), redirect);
   return false;
 };
 
@@ -105,7 +106,7 @@ var SignupWindow = function SignupWindow(props) {
   }), /*#__PURE__*/React.createElement("input", {
     className: "formSubmit",
     type: "submit",
-    value: "Sign in"
+    value: "Sign up"
   }));
 };
 

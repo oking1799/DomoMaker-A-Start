@@ -47,7 +47,7 @@ const DomoList = function(props) {
     }
 
     const domoNodes = props.domos.map(function(domo) {
-        console.log("talent" + domo.talent)
+        //console.log("talent" + domo.talent)
         return (
             <div key={domo._id} className="domo">
                 <img src="/assets/img/domoface.jpeg" alt="domo face" className="domoFace" />

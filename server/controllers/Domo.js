@@ -17,7 +17,7 @@ const makeDomo = (req, res) => {
   if (!req.body.name || !req.body.age || !req.body.talent) {
     return res.status(400).json({ error: 'RAWR! name, age and talent are required ' });
   }
-
+console.log("making domos...");
   const domoData = {
     name: req.body.name,
     age: req.body.age,
